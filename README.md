@@ -17,11 +17,15 @@ npm install --save @greymass/base2048
 
 ```ts
 import Base2048 from '@greymass/base2048'
+
 const wordlist = loadFile('bip39-english.txt')
 const base2048 = new Base2048(wordlist)
+
 const message = [104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100] // utf-8 "hello world"
+
 const encoded = base2048.encode(message)
 console.log(encoded.join(' ')) // 'half clock brand tattoo alter response situate milk'
+
 const decoded = base2048.decode(encoded)
 console.log(decoded) // [104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]
 ```
