@@ -20,12 +20,13 @@ const external = Object.keys(pkg.dependencies)
 
 export default [
     {
-        input: 'src/index.ts',
+        input: 'src/index-cjs.ts',
         output: {
             banner,
             file: pkg.main,
             format: 'cjs',
             sourcemap: true,
+            exports: 'default',
         },
         plugins: [typescript({target: 'es6'})],
         external,
