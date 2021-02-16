@@ -1,6 +1,6 @@
 {
     "name": "@greymass/base2048",
-    "description": "Base2048 encocer and decoder in JavaScript",
+    "description": "Base2048 encoder and decoder in JavaScript",
     "version": "1.0.0",
     "homepage": "https://github.com/greymass/base2048-js",
     "license": "BSD-3-Clause",
